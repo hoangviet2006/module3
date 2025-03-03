@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #7330F9;
+    min-height: 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header ul li a {
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.left ul li a {
+    color: #000000;
+}
+
+.right ul li a {
+    color: #000000;
+
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+}
+
+.row ul li {
+    list-style: none;
+}
+
+.footer {
+    background-color: #ffffff;
+    min-height: 8%;
+
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.footer ul li  {
+    list-style: none;
+    margin-right: 50px;
+}
+.footer a{
+    color: black;
+}
+
+.content {
+    height: 100vh;
+    padding-top: 60px;
+
+}
+
+.van-ban {
+    text-align: center;
+    color: #b700ff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.left {
+    background-color: #f6f6f6;
+}
+.main{
+    background-color: #f6f6f6;
+}
+
+.right {
+    background-color: #f6f6f6;
+}
+.right ul li a {
+    color: blue;
+}
+
+.gioi-thieu {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.hue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.da-nang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hoi-an{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ha-noi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row select {
+    background-color: #8c00ff; /* Màu nền tím */
+    color: #FFFFFF; /* Màu chữ trắng */
+    /* border: 1px solid #FFFFFF;*/ /* Viền trắng */
+    border-radius: 5px; /* Bo góc nhẹ */
+    padding: 5px 10px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Cỡ chữ */
+    /*font-weight: bold; *//* Chữ đậm */
+    cursor: pointer; /* Biểu tượng chuột */
+}
+
+
+
+@media only screen and(max-width: 740px) {
+    .col-s1 {
+        width: 8.3333%;
+    }
+
+    .col-s2 {
+        width: 16.66667%;
+    }
+
+    .col-s3 {
+        width: 25%;
+    }
+
+    .col-s4 {
+        width: 33.33333%;
+    }
+
+    .col-s5 {
+        width: 41.66667%;
+    }
+
+    .col-s6 {
+        width: 50%;
+    }
+
+    .col-s7 {
+        width: 58.33333%;
+    }
+
+    .col-s8 {
+        width: 66.66667%;
+    }
+
+    .col-s9 {
+        width: 75%;
+    }
+
+    .col-s10 {
+        width: 83.33333%;
+    }
+
+    .col-s11 {
+        width: 91.666667%;
+    }
+
+    .col-s12 {
+        width: 100%;
+    }
+}
+@media only screen and(min-width: 741px) and (max-width:1240px ) {
+    .col-m1 {
+        width: 8.3333%;
+    }
+
+    .col-m2 {
+        width: 16.66667%;
+    }
+
+    .col-m3 {
+        width: 25%;
+    }
+
+    .col-m4 {
+        width: 33.33333%;
+    }
+
+    .col-m5 {
+        width: 41.66667%;
+    }
+
+    .col-m6 {
+        width: 50%;
+    }
+
+    .col-m7 {
+        width: 58.33333%;
+    }
+
+    .col-m8 {
+        width: 66.66667%;
+    }
+
+    .col-m9 {
+        width: 75%;
+    }
+
+    .col-m10 {
+        width: 83.33333%;
+    }
+
+    .col-m11 {
+        width: 91.666667%;
+    }
+
+    .col-m12 {
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1240px) {
+    .col-l1 {
+        width: 8.3333%;
+    }
+
+    .col-l2 {
+        width: 16.66667%;
+    }
+
+    .col-l3 {
+        width: 25%;
+    }
+
+    .col-l4 {
+        width: 33.33333%;
+    }
+
+    .col-l5 {
+        width: 41.66667%;
+    }
+
+    .col-l6 {
+        width: 50%;
+    }
+
+    .col-l7 {
+        width: 58.33333%;
+    }
+
+    .col-l8 {
+        width: 66.66667%;
+    }
+
+    .col-l9 {
+        width: 75%;
+    }
+
+    .col-l10 {
+        width: 83.33333%;
+    }
+
+    .col-l11 {
+        width: 91.666667%;
+    }
+
+    .col-l12 {
+        width: 100%;
+    }
+}

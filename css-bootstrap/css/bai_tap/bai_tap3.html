@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h5 {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        h5:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        #menu {
+            background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Truyện Cổ Tích Việt Nam</h1>
+<hr>
+<div id="menu">
+    <h3 style="color: aliceblue">Mục Lục</h3>
+    <h5 onclick="tamCam()"> Tấm Cám</h5>
+    <h5 onclick="thachXanh()">Thạch Xanh</h5>
+    <h5 onclick="soDua()">Sọ Dừa</h5>
+</div>
+
+<div>
+    <div id="content"></div>
+</div>
+
+</body>
+<script>
+    function tamCam() {
+        let tamCam = "Ngày xửa ngày xưa, có hai chị em cùng cha khác mẹ tên là Tấm và Cám......"
+        document.getElementById("content").innerText = tamCam
+    }
+
+    function thachXanh() {
+        let thachXanh = "Thạch Sanh là một chàng trai dũng cảm, sống trong một túp lều nhỏ..."
+        document.getElementById("content").innerText = thachXanh
+    }
+
+    function soDua() {
+        let soDua = "Sọ Dừa sinh ra trong một gia đình nghèo khó nhưng lại vô cùng thông minh..."
+        document.getElementById("content").innerText = soDua
+    }
+
+</script>
+</html>

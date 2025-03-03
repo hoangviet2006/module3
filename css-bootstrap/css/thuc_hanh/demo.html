@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #edbd64;
+
+        }
+
+        .logo {
+            float: left;
+            width: 30px;
+            margin-right: 50px
+        }
+
+        .name {
+            font-size: 15px;
+            margin-left: 100px;
+        }
+
+        .anh {
+
+            font-weight: bold;
+            height: 30px;
+
+        }
+
+        .right-nav {
+            display: flex;
+            height: 30px;
+            align-items: center;
+
+        }
+
+        input {
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input:focus {
+            border-color: #00e1ff;
+            box-shadow: 0 0 5px rgba(0, 217, 255, 0.5);
+        }
+
+        .input-icon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .login-name{
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .login{
+            width: 25px;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="nav">
+    <div class="logo">
+        <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+    </div>
+    <div class="right-nav">
+
+        <div class="input-icon">
+            <input placeholder="tìm kiếm">
+            <img class="anh" width="25" height="25" src="https://img.icons8.com/color/48/search--v1.png"
+                 alt="search--v1"/>
+        </div>
+        <div class="login-name">
+            <p class="name"> Hoàng Đình Viet</p>
+            <img class=" login" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/checked-user-male.png"
+                 alt="checked-user-male" />
+        </div>
+    </div>
+</nav>
+</body>
+</html>
