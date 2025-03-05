@@ -14,6 +14,11 @@ public class ImportedGoods {
         this.price = price;
     }
 
+    public ImportedGoods(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
     public int getId() {
         return id;
     }
