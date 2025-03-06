@@ -34,9 +34,7 @@
                 <button type="button"  onclick="deleteInfo(${importgoods.getId()},'${importgoods.getName()}')" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                    Delete
                 </button>
-                <a href="import?action=edit&id=${importgoods.getId()}">
-                    <button>Chỉnh Sửa</button>
-                </a>
+                <a href="import?action=edit&id=${importgoods.getId()}"><button>Chỉnh Sửa</button></a>
             </td>
         </tr>
     </c:forEach>
@@ -59,7 +57,8 @@
             <div class="modal-body">
                 <input hidden="hidden" name="id" id="deleteId">
                 <input hidden="hidden" name="action" value="delete">
-                <span>Bạn có muốn xóa sản phẩm có id :  </span> <span id="deleteName"></span>
+                <span>Bạn có muốn xóa sản phẩm có tên :  </span>
+                <span id="deleteName"></span>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
