@@ -15,8 +15,8 @@
 <body>
 <c:import url="/navbar.jsp"></c:import>
 <form action="/product?action=create" method="post">
-    <div class="d-flex justify-content-between my-0 px-0">
-        <input class="form-control form-control-sm w-50 mb-2" name="id" placeholder="Nhập id">
+    <div class="d-flex justify-content-between my-1 px-0">
+        <input class="form-control form-control-sm w-50 mb-2" hidden="hidden" name="id" placeholder="Nhập id">
         <input class="form-control form-control-sm w-50 mb-2" name="name" placeholder="Nhập tên">
         <input class="form-control form-control-sm w-50 mb-2" name="price" placeholder="Nhập giá">
         <input class="form-control form-control-sm w-50 mb-2" name="quantity" placeholder="Nhập số lượng">

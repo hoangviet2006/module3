@@ -16,10 +16,10 @@
 <form action="/product?action=edit" method="post">
     <div class="d-flex justify-content-between my-0 px-0">
         <input class="form-control form-control-sm w-75 mb-2" name="id" hidden="hidden" value="${product.getId()}">
-        <input class="form-control form-control-sm w-75 mb-2" name="name" value="${product.getName()}">
-        <input class="form-control form-control-sm w-75 mb-2" name="price" value="${product.getPrice()}">
-        <input class="form-control form-control-sm w-75 mb-2" name="quantity" value="${product.getQuantity()}">
-        <input class="form-control form-control-sm w-75 mb-2" name="description" value="${product.getDescription()}">
+        <input class="form-control form-control-sm w-75 mb-2" name="name" value="${product.getName()}" required>
+        <input class="form-control form-control-sm w-75 mb-2" name="price" value="${product.getPrice()}" required>
+        <input class="form-control form-control-sm w-75 mb-2" name="quantity" value="${product.getQuantity()}" required>
+        <input class="form-control form-control-sm w-75 mb-2" name="description" value="${product.getDescription()}" required>
         <button class="btn btn-primary btn-sm mx-3">Chỉnh Sửa</button>
     </div>
 

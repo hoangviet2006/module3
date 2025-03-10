@@ -95,7 +95,8 @@ public class PhoneController extends HttpServlet {
         String newName = req.getParameter("name");
         double newPrice = Double.parseDouble(req.getParameter("price"));
         String newType = req.getParameter("type");
-        Phone phone1 = new Phone(newName, newPrice, newType);
+        int id1 = Integer.parseInt(req.getParameter("id"));
+        Phone phone1 = new Phone(id1,newName, newPrice, newType);
         String id = req.getParameter("id");
         if (id != null) {
             int idDelete = Integer.parseInt(id);

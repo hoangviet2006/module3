@@ -20,11 +20,35 @@ VALUES ('P003', 'Samsung S23', 1100.00, 0, 'Điện thoại Samsung', 'Hết hà
 
 INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
 VALUES ('P004', 'MacBook Air M2', 1300.00, 8, 'Laptop mỏng nhẹ', 'Còn hàng');
-INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
-VALUES ('P005', 'MacBook Air M2', 1300.00, 8, 'Laptop mỏng nhẹ', 'Còn hàng');
-select*from product;
-create unique index i_product_code on product(`code`);
 
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P005', 'MacBook Pro M2', 1500.00, 5, 'Laptop hiệu năng cao', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P006', 'Dell XPS 13', 1200.00, 7, 'Laptop mỏng nhẹ, pin trâu', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P007', 'Asus ROG Strix', 2000.00, 10, 'Laptop gaming mạnh mẽ', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P008', 'HP Spectre x360', 1400.00, 6, 'Laptop 2 trong 1, cảm ứng', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P009', 'Lenovo ThinkPad X1 Carbon', 1600.00, 4, 'Laptop doanh nhân bền bỉ', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P010', 'Acer Swift 5', 1000.00, 9, 'Laptop nhẹ nhất phân khúc', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P011', 'MSI Prestige 14', 1300.00, 8, 'Laptop dành cho thiết kế', 'Còn hàng');
+
+INSERT INTO product (`code`, `name`, price, amount, `description`, `status`)
+VALUES ('P012', 'Razer Blade 15', 2500.00, 3, 'Laptop gaming cao cấp', 'Còn hàng');
+
+
+select*from product;
+drop table product;
+create unique index i_product_code on product(`code`);
 create  index i_product_name_price on product(`name`,price);
 explain select *from product where price<100;
 create view w_Product as select id, `code`,`name`,price,`status` from product ;
@@ -41,3 +65,7 @@ select * from product;
 end //
 delimiter ;	
 call get_Product();
+
+
+
+
