@@ -36,7 +36,6 @@
                 </li>
             </ul>
             <div class="w-100 text-center">
-                <h1>Danh Sách Sản Phẩm</h1>
             </div>
             <form action="/admin?action=search" method="post" class="mx-0 my-0 d-flex align-items-center ">
                 <input class="form-control form-control-sm w-75  me-2" name="model" placeholder="Model sản phẩm cần tìm" value="${param.name}">

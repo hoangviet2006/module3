@@ -141,7 +141,7 @@ public class ProductRepository implements IProductRepository {
                 accessoryList.add(accessory);
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException (e);
         }
         return accessoryList;
     }

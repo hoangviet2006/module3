@@ -41,27 +41,48 @@
                 </c:forEach>
             </select>
             <small id="errorSelect"></small>
-            <button class="btn btn-primary w-100">Lưu</button>
+            <button id="btn-save" class="btn btn-primary w-100">Lưu</button>
         </form>
     </div>
 </div>
 <script>
+    let inputCode=false;
+    let inputBrand=false;
+    let btnCheck = inputCode&&inputBrand
+    document.getElementById("btn-save").disabled = true;
     function checkCode() {
         const regex = /^[A-Z]{2}-\d{3}$/;
         let code = document.getElementById("code").value;
         if (regex.test(code)) {
+            inputCode=true;
             document.getElementById("errorCode").innerText = "";
         } else {
+            inputCode=false;
             document.getElementById("errorCode").innerText = "Vui lòng nhập đúng theo định dạng XX-nnn (với XX: 2 kí tự hoa; nnn: 3 số)";
+        }
+        btnCheck = inputCode&&inputBrand
+        if (btnCheck){
+             alert("ok")
+            document.getElementById("btn-save").disabled = false;
+        }else {
+            document.getElementById("btn-save").disabled = true;
         }
     }
 
     function checkBrand() {
         let code = document.getElementById("brand").value;
         if (code === "") {
+            inputBrand=false;
             document.getElementById("errorBrand").innerText = "Không được để trống";
         } else {
+            inputBrand=true;
             document.getElementById("errorBrand").innerText = "";
+        }
+        btnCheck = inputCode&&inputBrand
+        if (btnCheck){
+            document.getElementById("btn-save").disabled = false;
+        }else {
+            document.getElementById("btn-save").disabled = true;
         }
     }
 

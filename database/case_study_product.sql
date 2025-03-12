@@ -18,6 +18,25 @@ create table product(
 );
 select product.id,product. `code`,product.brand, product.model,product.price,product.release_date,product.description,accessory.`name` from product left join accessory on product.id_accessory=accessory.id;
 
+
+create table orders(
+id int primary key auto_increment,
+user_name varchar(155) not null,
+orders_date datetime,
+total_price double,
+`status` varchar(155)
+);
+INSERT INTO orders (user_name, orders_date, total_price, `status`) VALUES
+('user1', NOW(), 1999.99, 'PENDING'),
+('user2', NOW(), 899.50, 'PROCESSING'),
+('user3', NOW(), 2499.00, 'COMPLETED'),
+('user4', NOW(), 1500.75, 'CANCELED'),
+('user5', NOW(), 3200.00, 'PENDING');
+select * from orders;
+
+update orders set user_name=?,orders_date=?,total_price=?,status=?;
+delete from orders where id=?;
+select * from orders where  user_name like ?;
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -29,6 +48,7 @@ CREATE TABLE user (
 );
 drop table product;
 drop table accessory;
+drop table orders;
 INSERT INTO accessory (name) VALUES
 ('AirPods Pro 2'),  -- Phụ kiện cho iPhone 15 Pro
 ('Samsung Galaxy Buds 2 Pro'),  -- Phụ kiện cho Galaxy S24 Ultra

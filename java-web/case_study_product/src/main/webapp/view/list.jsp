@@ -7,7 +7,9 @@
 </head>
 <c:import url="../navbar.jsp"></c:import>
 <body>
-<a href="admin?action=create"><button class="btn btn-primary btn-sm btn-lg px-4">CREATE</button></a>
+<a href="/admin?action=create"><button class="btn btn-primary btn-sm btn-lg px-4">CREATE</button></a>
+<a href="/order"><button>Xem danh sách orders</button></a>
+<h1 style="text-align: center">Danh Sách Sản Phẩm</h1>
 <table id="tableProduct" class="table table-primary">
     <thead>
     <tr>
