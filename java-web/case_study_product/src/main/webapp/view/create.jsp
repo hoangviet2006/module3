@@ -35,7 +35,7 @@
             <small id="errorDescription"></small>
             <label for="id_accessory" class="form-label"></label>
             <select name="id_accessory" id="id_accessory" class="form-select mb-2" onblur="checkSelect()">
-                <option value="">-- Chọn phụ kiện --</option>
+                <option >-- Chọn phụ kiện --</option>
                 <c:forEach items="${accessoryList}" var="accessory">
                     <option value="${accessory.getId()}">${accessory.getName()}</option>
                 </c:forEach>

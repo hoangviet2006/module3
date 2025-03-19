@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Admin
-  Date: 3/7/2025
-  Time: 10:04 AM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -36,7 +30,7 @@
                 </li>
             </ul>
             <div class="w-100 text-center">
-                <h1>Danh Sách Sản Phẩm</h1>
+                <h1 style="text-align: center">Danh Sách Sản Phẩm</h1>
             </div>
         </div>
     </div>

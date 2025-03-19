@@ -38,10 +38,6 @@
             <div class="w-100 text-center">
                 <h1>Danh Sách Sản Phẩm</h1>
             </div>
-            <form action="/student?action=search" method="post" class="mx-0 my-0 d-flex align-items-center ">
-                <input class="form-control form-control-sm w-75  me-2" name="name" placeholder="Tên sản phẩm cần tìm" value="${param.name}">
-                <button class="btn btn-primary btn-sm justify-content-between">Search</button>
-            </form>
         </div>
     </div>
 </nav>

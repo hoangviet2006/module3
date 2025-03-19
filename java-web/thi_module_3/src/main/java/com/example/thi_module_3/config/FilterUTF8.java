@@ -1,4 +1,4 @@
-package com.example.case_study_product.config;
+package com.example.thi_module_3.config;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
